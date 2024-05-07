@@ -1,8 +1,7 @@
 ---
 title: "DS101 QZ 2024"
-editor: 
-  markdown: 
-    wrap: 72
+format: html
+editor: visual
 ---
 
 ## Date and Location
