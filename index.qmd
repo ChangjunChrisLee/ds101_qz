@@ -159,7 +159,7 @@ Let a vector *X* be like below
 X <- KMP_list_qz_a[[3]]
 ```
 
-7.  **How many missing valued in vector X?**
+7.  **How many missing values are in vector X?**
 
 <!-- -->
 
