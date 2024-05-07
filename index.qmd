@@ -81,10 +81,10 @@ OK, then let's begin the qz.
 
 <!-- -->
 
-A)  5
-B)  6
-C)  7
-D)  8
+A)  4
+B)  5
+C)  6
+D)  7
 
 <br>
 
