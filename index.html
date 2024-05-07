@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.553">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>DS101 QZ 2024</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="index_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<link href="index_files/libs/wordcloud2-0.0.1/wordcloud.css" rel="stylesheet">
+
+<script src="index_files/libs/wordcloud2-0.0.1/wordcloud2-all.js"></script>
+
+<script src="index_files/libs/wordcloud2-0.0.1/hover.js"></script>
+
+<script src="index_files/libs/wordcloud2-binding-0.2.1/wordcloud2.js"></script>
+
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">DS101 QZ 2024</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="date-and-location" class="level2">
+<h2 class="anchored" data-anchor-id="date-and-location">Date and Location</h2>
+<ul>
+<li><p>Date: 8 May (Wed) 09:00 - 11:00</p></li>
+<li><p>Location: Class Room</p></li>
+</ul>
+</section>
+<section id="notice" class="level2">
+<h2 class="anchored" data-anchor-id="notice">Notice</h2>
+<ul>
+<li>Quiz will be administered through Google Forms.</li>
+<li>Please bring your laptop for the quiz.</li>
+<li>You are allowed to access any information through the Internet</li>
+<li>However, communication with others is strictly prohibited.</li>
+<li>Do not use any messaging apps (e.g., KakaoTalk, TikTok, Line, WeChat, etc.) during the quiz.</li>
+<li>Upon completion of the quiz, you are required <strong>to submit your code</strong>.</li>
+</ul>
+<hr>
+</section>
+<section id="submit-your-answers" class="level2">
+<h2 class="anchored" data-anchor-id="submit-your-answers">Submit your answers</h2>
+<p>Solve the problem and submit your answer by entering it in the Google form at the link below.</p>
+<p><a href="https://forms.gle/aiEqgtjGqCuY5Emx6" class="uri">https://forms.gle/aiEqgtjGqCuY5Emx6</a></p>
+<hr>
+</section>
+<section id="qz-content" class="level2">
+<h2 class="anchored" data-anchor-id="qz-content">QZ content</h2>
+<p><strong>PART I. Basic Syntax in R</strong></p>
+<ol type="1">
+<li>List</li>
+<li>Vector</li>
+<li>Matrix</li>
+<li>Data.frame</li>
+<li>Data wrangling</li>
+</ol>
+<p><strong>PART II. Data Wrangling with <code>tidyverse</code></strong></p>
+<p><strong>PART III. Data Visualization</strong></p>
+<p><strong>PART IV. Advanced</strong></p>
+<p><br></p>
+<hr>
+</section>
+<section id="qz" class="level2">
+<h2 class="anchored" data-anchor-id="qz">QZ</h2>
+<p><br></p>
+<section id="part-i.-basic-syntax-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="part-i.-basic-syntax-in-r"><strong>PART I. Basic Syntax in R</strong></h3>
+<p>Please download the data below</p>
+<p><a href="data/qz_a.RData">qz_a.RData</a></p>
+<p>Locate “qz_a.RData” at your working directory and load the file</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"data/qz_a.RData"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Then you will see the object “KMP_list_qz_a” in the Environment window of RStudio.</p>
+<p>OK, then let’s begin the qz.</p>
+<p><br></p>
+<section id="list" class="level4">
+<h4 class="anchored" data-anchor-id="list">List</h4>
+<ol type="1">
+<li><strong>How many elements are in the list?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+</ol>
+<p><br></p>
+<ol start="2" type="1">
+<li><strong>What is the name of the second element of the list?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li>vector</li>
+<li>matrix</li>
+<li>p20</li>
+<li>None</li>
+</ol>
+<p><br></p>
+<ol start="3" type="1">
+<li><strong>What is the data type of the first element in the list?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li>vector</li>
+<li>matrix</li>
+<li>data.frame (tibble)</li>
+<li>list</li>
+</ol>
+<p><br></p>
+<ol start="4" type="1">
+<li><strong>Which of the following statements correctly creates the sixth element of the list as an empty list?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li><code>KMP_list_qz_a[[6]] &lt;- list(0)</code></li>
+<li><code>KMP_list_qz_a[6] &lt;- list()</code></li>
+<li><code>KMP_list_qz_a[[6]] &lt;- empty_list(0)</code></li>
+<li><code>KMP_list_qz_a[6] &lt;- list(0)</code></li>
+</ol>
+<p><br></p>
+<ol start="5" type="1">
+<li><strong>Which of the following correctly describes the creation of a vector {2,4,6,8,10} using the seq function and placing it as the first element of the sixth element of a list?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li><code>KMP_list_qz_a[[6]][[1]] &lt;- seq(2,10,2</code>)</li>
+<li><code>KMP_list_qz_a[[6]][1] &lt;- seq(2,10,2)</code></li>
+<li><code>KMP_list_qz_a[[6]][1] &lt;- c(2,4,6,8,10)</code></li>
+<li><code>KMP_list_qz_a[6][[1]] &lt;- seq(2,10,2)</code></li>
+</ol>
+<p><br></p>
+<ol start="6" type="1">
+<li><strong>Which of the following options correctly interprets the meaning of the code <code>KMP_list_qz_a[[6]][[1]][4]</code>?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li>Access the fourth element of the first element of the sixth element of the list KMP_list_qz_a.</li>
+<li>Assign the value 4 to the fourth element of the first element of the sixth element of the list KMP_list_qz_a.</li>
+<li>Retrieve the fourth element of the first sub-list within the sixth element of the list KMP_list_qz_a.</li>
+<li>Remove the fourth element from the first sub-list within the sixth element of the list KMP_list_qz_a.</li>
+</ol>
+<p><br></p>
+</section>
+<section id="vector" class="level4">
+<h4 class="anchored" data-anchor-id="vector">Vector</h4>
+<p>Let a vector <em>X</em> be like below</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>X <span class="ot">&lt;-</span> KMP_list_qz_a[[<span class="dv">3</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="7" type="1">
+<li><strong>How many missing valued in vector X?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+</ol>
+<p><br></p>
+<ol start="8" type="1">
+<li><strong>What is the position of value 41 in X? (Note: it’s not about the value of X[41])</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li>33</li>
+<li>43</li>
+<li>53</li>
+<li>63</li>
+</ol>
+<p><br></p>
+<ol start="9" type="1">
+<li><strong>Which of the following expressions correctly represents the number of elements in vector X where the values are not missing and are less than 27?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li><code>length(X[X &lt; 27 &amp; !is.na(X)])</code></li>
+<li><code>length(X[X &lt; 27 | !is.na(X)])</code></li>
+<li><code>length(X[X &gt;= 27 &amp; !is.na(X)])</code></li>
+<li><code>length(X[X &gt;= 27 | !is.na(X)])</code></li>
+</ol>
+<p><br></p>
+</section>
+<section id="matrix" class="level4">
+<h4 class="anchored" data-anchor-id="matrix">Matrix</h4>
+<p>Let a matrix <em>M</em> be like below</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>M <span class="ot">&lt;-</span> KMP_list_qz_a[[<span class="dv">4</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<ol start="10" type="1">
+<li><strong>Which of the following statements is true regarding the expression <code>M[3,3]</code>, <code>t(M)[3,3]</code>, and <code>M[9]</code>?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li>M[3,3] is equivalent to t(M)[3,3] but different from M[9].</li>
+<li>M[3,3] is equivalent to M[9] but different from t(M)[3,3].</li>
+<li>M[3,3] is different from both t(M)[3,3] and M[9].</li>
+<li>M[3,3], t(M)[3,3], and M[9] are all equivalent.</li>
+</ol>
+<p><br></p>
+<ol start="11" type="1">
+<li><strong>Which of the following correctly describes the output of the given code snippets?</strong></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">apply</span>(M, <span class="dv">2</span>, mean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  2  5  8 11 14</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">apply</span>(M, <span class="dv">1</span>, mean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7 8 9</code></pre>
+</div>
+</div>
+<ol type="A">
+<li>The first snippet calculates the average value of each column in matrix M, while the second snippet calculates the average value of each row.</li>
+<li>The first snippet calculates the average value of each row in matrix M, while the second snippet calculates the average value of each column.</li>
+<li>Both snippets calculate the average value of each element in matrix
+<ol start="13" type="A">
+<li></li>
+</ol></li>
+<li>The snippets produce errors because the apply function does not support averaging operations</li>
+</ol>
+<p><br></p>
+</section>
+<section id="data.frame" class="level4">
+<h4 class="anchored" data-anchor-id="data.frame">Data.frame</h4>
+<p><br></p>
+<p>Let DF1 and DF2 as like below</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>DF1 <span class="ot">&lt;-</span> KMP_list_qz_a[[<span class="dv">1</span>]]</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>DF2 <span class="ot">&lt;-</span> KMP_list_qz_a[[<span class="dv">2</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="12" type="1">
+<li><strong>How many variables in DF1?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li>8</li>
+<li>10</li>
+<li>12</li>
+<li>14</li>
+</ol>
+<p><br></p>
+<ol start="13" type="1">
+<li><strong>How many people (observations) in DF2?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li>40</li>
+<li>50</li>
+<li>60</li>
+<li>70</li>
+</ol>
+<p><br></p>
+<ol start="14" type="1">
+<li><strong>In DF1, how many people are in the category of 3000-4000K of the income?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+</ol>
+<p><br></p>
+<ol start="15" type="1">
+<li><strong>In DF1, how many “Male” &amp; “Never married” people, and how many SKT (Telecom) users among them? (Use the variable: telecom)</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li>5, 1</li>
+<li>5, 3</li>
+<li>3, 1</li>
+<li>3, 3</li>
+</ol>
+<p><br></p>
+<ol start="16" type="1">
+<li><strong>How many people who used an LG smartphone in 2019 (in DF1) switched to a Samsung smartphone in 2020 (in DF2)?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li>3</li>
+<li>5</li>
+<li>7</li>
+<li>9</li>
+</ol>
+<p><br></p>
+<ol start="17" type="1">
+<li><strong>Of those who used an LG smartphone in 2019, how many people still use LG in 2020?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li>None of them</li>
+<li>2</li>
+<li>4</li>
+<li>6</li>
+</ol>
+<p><br></p>
+<p>The code processes a text containing lyrics of “Let It Be” by The Beatles, removing newline characters and commas using the gsub function, then creates a word cloud visualization to display the frequency of words in the song.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>letitbe <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"When I find myself in times of trouble, Mother Mary comes to me</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="st">  Speaking words of wisdom, let it be</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="st">  And in my hour of darkness she is standing right in front of me</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="st">  Speaking words of wisdom, let it be</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="st">  Let it be, let it be, let it be, let it be</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="st">  Whisper words of wisdom, let it be</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="st">  And when the broken hearted people living in the world agree</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="st">  There will be an answer, let it be</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="st">  For though they may be parted, there is still a chance that they will see</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="st">  There will be an answer, let it be</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="st">  Let it be, let it be, let it be, let it be</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="st">  There will be an answer, let it be</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="st">  Let it be, let it be, let it be, let it be</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="st">  Whisper words of wisdom, let it be</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="st">  Let it be, let it be, let it be, let it be</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="st">  Whisper words of wisdom, let it be, be</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="st">  And when the night is cloudy there is still a light that shines on me</span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="st">  Shinin' until tomorrow, let it be</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="st">  I wake up to the sound of music, Mother Mary comes to me</span></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="st">  Speaking words of wisdom, let it be</span></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="st">  And let it be, let it be, let it be, let it be</span></span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a><span class="st">  Whisper words of wisdom, let it be</span></span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a><span class="st">  And let it be, let it be, let it be, let it be</span></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a><span class="st">  Whisper words of wisdom, let it be"</span>)</span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>letitbe_rm <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>, <span class="st">""</span>,letitbe)</span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>letitbe_rm <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">","</span>, <span class="st">""</span>,letitbe_rm)</span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>word_list <span class="ot">&lt;-</span> <span class="fu">strsplit</span>(letitbe_rm, <span class="at">split =</span> <span class="st">" "</span>)</span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>word_vec <span class="ot">&lt;-</span> <span class="fu">unlist</span>(word_list)</span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>word_count <span class="ot">&lt;-</span> <span class="fu">sort</span>(<span class="fu">table</span>(word_vec), <span class="at">decreasing =</span> T)</span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>df_word_count <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(word_count)</span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(wordcloud2)</span>
+<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a><span class="fu">wordcloud2</span>(df_word_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="wordcloud2 html-widget html-fill-item" id="htmlwidget-89bea362afcf44a39500" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-89bea362afcf44a39500">{"x":{"word":["be","it","let","","of","wisdom","words","And","Whisper","in","is","Let","me","the","will","an","answer","Speaking","There","to","a","comes","I","Mary","Mother","still","that","there","they","when","agree","broken","chance","cloudy","darkness","find","For","front","hearted","hour","light","living","may","music","my","myself","night","on","parted","people","right","see","she","shines","Shinin'","sound","standing","though","times","tomorrow","trouble","until","up","wake","When","world"],"freq":[41,36,32,23,12,8,8,5,5,4,4,4,4,4,4,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":4.390243902439025,"backgroundColor":"white","gridSize":0,"minRotation":-0.7853981633974483,"maxRotation":0.7853981633974483,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+</div>
+</div>
+<p><br></p>
+<ol start="18" type="1">
+<li><strong>What is the purpose of using the <code>gsub</code> function in the provided code snippet?</strong></li>
+</ol>
+<!-- -->
+<ol type="A">
+<li>It converts the text into a word vector for further analysis.</li>
+<li>It prepares the text data by removing unwanted characters like newline characters and commas.</li>
+<li>It calculates the frequency of each word in the text.</li>
+<li>It generates a word cloud visualization based on the frequency of words in the text.</li>
+</ol>
+<p><br></p>
+</section>
+</section>
+<section id="part-ii.-data-wrangling-with-tidyverse" class="level3">
+<h3 class="anchored" data-anchor-id="part-ii.-data-wrangling-with-tidyverse"><strong>PART II. Data Wrangling with <code>tidyverse</code></strong></h3>
+<p><br></p>
+<p>Download the gapminder package for using gapminder dataset.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("gapminder")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Import required libraries</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gapminder)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+</div>
+<p>The code works like below:</p>
+<ul>
+<li><p>filters only 1962 data from gapminder data,</p></li>
+<li><p>selects only country and gdpPercap variables,</p></li>
+<li><p>renames gdpPercap variables to gdp_1962,</p></li>
+<li><p>and assigns it to object ‘gap_1962’.</p></li>
+</ul>
+<p><img src="images/clipboard-101652632.png" class="img-fluid"></p>
+<ol start="19" type="1">
+<li><strong>Choose the one that fits the blank (a), (b), (c)</strong></li>
+</ol>
+<p><strong>A)</strong> (a) filter (b) select (c) rename<br>
+<strong>B)</strong> (a) subset (b) keep (c) relabel<br>
+<strong>C)</strong> (a) arrange (b) pick (c) change_name<br>
+<strong>D)</strong> (a) extract (b) choose (c) modify</p>
+<p><br></p>
+<p>The code below did the same procedure with above but for the year 2007. (a), (b), (c) are the same with the answers above.</p>
+<p><img src="images/clipboard-1722588996.png" class="img-fluid"></p>
+<p>The code below finds the difference in gdpPercap from 1962 to 2007 and sorts them in descending order of growth (gdp_gap).</p>
+<p><img src="images/clipboard-2005514971.png" class="img-fluid"></p>
+<ol start="20" type="1">
+<li><strong>Choose the one that fits the blank (a), (b), (c)</strong></li>
+</ol>
+<p><strong>A)</strong> (a) inner_join (b) transform (c) setNames<br>
+<strong>B)</strong> (a) left_join (b) mutate (c) desc<br>
+<strong>C)</strong> (a) with (b) modify_if (c) -<br>
+<strong>D)</strong> (a) left_join (b) apply (c) recast</p>
+<p><br></p>
+<ol start="21" type="1">
+<li><strong>In the result above, what is the rank of “Korea, Rep.” in terms of <code>gdp_gap</code>?</strong></li>
+</ol>
+<p><strong>A)</strong> 9<br>
+<strong>B)</strong> 11<br>
+<strong>C)</strong> 13<br>
+<strong>D)</strong> 16</p>
+<p><br></p>
+<ol start="22" type="1">
+<li><strong>Using the codes above, create a table for population growth from 1962 to 2007, and choose the country with the highest population growth during the period.</strong></li>
+</ol>
+<p><strong>A)</strong> China<br>
+<strong>B)</strong> India<br>
+<strong>C)</strong> Indonesia<br>
+<strong>D)</strong> Brazil</p>
+<p><br></p>
+</section>
+<section id="part-iii.-data-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="part-iii.-data-visualization"><strong>PART III. Data Visualization</strong></h3>
+<p><br></p>
+<p>The following is the code to draw the graph below using the <code>gdp_gap_1962_2007</code> table created above.</p>
+<p><img src="images/clipboard-2865582315.png" class="img-fluid"></p>
+<p><img src="images/clipboard-2892810880.png" class="img-fluid"></p>
+<ol start="23" type="1">
+<li><strong>Fill in the blanks.</strong></li>
+</ol>
+<p><strong>A)</strong> (a) gdp_gap (b) country (c) identity<br>
+<strong>B)</strong> (a) country (b) year (c) “dodge”<br>
+<strong>C)</strong> (a) country (b) gdp_gap (c) “identity”<br>
+<strong>D)</strong> (a) gdp_gap (b) country (c) “identity”</p>
+<p><br></p>
+<p>Let’s use ‘mtcars’ dataset</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(mtcars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                   mpg cyl disp  hp drat    wt  qsec vs am gear carb
+Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
+</div>
+</div>
+<ol start="24" type="1">
+<li><strong>The value obtained by dividing horsepower (<code>hp</code>) by weight (<code>wt</code>) is called marginal horsepower (<code>hp_by_wt</code>). Choose the car with the largest <code>hp_by_wt</code> among the cars in the mtcars data.</strong></li>
+</ol>
+<p><strong>A)</strong> Lotus Europa<br>
+<strong>B)</strong> Ford Pantera<br>
+<strong>C)</strong> Camaro Z28<br>
+<strong>D)</strong> Maserati Bora</p>
+<p><br></p>
+<ol start="25" type="1">
+<li><strong>Execute the code below to check the graph, and choose the relationship between the car’s weight (wt) and fuel efficiency (mpg).</strong></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">%&gt;%</span> </span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>wt, <span class="at">y=</span>mpg)) <span class="sc">+</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>A)</strong> positive relationship<br>
+<strong>B)</strong> negative relationship<br>
+<strong>C)</strong> no correlation<br>
+<strong>D)</strong> We cannot tell with this graph</p>
+<p><br></p>
+<ol start="26" type="1">
+<li><strong>Execute the code below to check the correlation between variables, and choose a variable relationship that is not a positive relationship.</strong></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">%&gt;%</span> </span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(mpg, disp, hp, drat, wt) <span class="sc">%&gt;%</span> </span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>A)</strong> disp ~ hp<br>
+<strong>B)</strong> wt ~ hp<br>
+<strong>C)</strong> drat ~ mpg<br>
+<strong>D)</strong> mpg ~ disp</p>
+<p><br></p>
+</section>
+<section id="part-iv.-advanced" class="level3">
+<h3 class="anchored" data-anchor-id="part-iv.-advanced"><strong>PART IV. Advanced</strong></h3>
+<p><br></p>
+<p>The code below expresses the correlation between variables in another way.</p>
+<ol start="27" type="1">
+<li><strong>Which of the following is not suitable as an advantage compared to the previous graph?</strong></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("corrplot")</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(corrplot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>corrplot 0.92 loaded</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">%&gt;%</span> </span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(mpg, disp, hp, drat, wt) <span class="sc">%&gt;%</span> </span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  cor <span class="sc">%&gt;%</span> </span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">corrplot</span>(<span class="at">method=</span><span class="st">"circle"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>A)</strong> Easy to find whether the relationship of two variables is positive or negative<br>
+<strong>B)</strong> It can be understood at a glance<br>
+<strong>C)</strong> More colorful<br>
+<strong>D)</strong> It can check each observation in the graph</p>
+<p><br></p>
+<p>The code below shows the distribution of petal length variables in iris data using geom_density. Run the code to check the graph and answer the questions.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>iris <span class="sc">%&gt;%</span> </span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Petal.Length, <span class="at">colour=</span>Species, <span class="at">fill=</span>Species)) <span class="sc">+</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="at">alpha=</span>.<span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="fu">aes</span>(<span class="at">xintercept=</span><span class="fu">mean</span>(Petal.Length),  </span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">colour=</span>Species),</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">linetype=</span><span class="st">"dashed"</span>, <span class="at">color=</span><span class="st">"grey"</span>, <span class="at">size=</span><span class="dv">1</span>)<span class="sc">+</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Petal Length (cm)"</span>) <span class="sc">+</span>  </span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Density"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="28" type="1">
+<li><strong>If by chance you found an iris and the petal length was 1.5 cm, what is the species of this iris?</strong></li>
+</ol>
+<p><strong>A)</strong> Setosa<br>
+<strong>B)</strong> Versicolor<br>
+<strong>C)</strong> Virginica</p>
+<p><br></p>
+<p>The graph below is an interactive graph with color classification for each species in the scatter plot for the relationship between Petal Length and Petal Width.</p>
+<ol start="29" type="1">
+<li><strong>Hover your mouse cursor over a dot on the graph and Choose the answer which is not an advantage of this type of graph.</strong></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("plotly")</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>iris <span class="sc">%&gt;%</span> </span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_ly</span>(</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="sc">~</span>Petal.Length, </span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="sc">~</span>Petal.Width,</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="sc">~</span>Species,  </span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">type =</span> <span class="st">"scatter"</span>, </span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">mode =</span> <span class="st">"markers"</span>) <span class="sc">%&gt;%</span>  </span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">scene =</span> <span class="fu">list</span>(<span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'Petal length'</span>),</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>                      <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'Petal width'</span>)))   </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>A)</strong> Information on the specific observation can be easily obtained<br>
+<strong>B)</strong> You can zoom in by specifying the range<br>
+<strong>C)</strong> You can expand the scale with the mouse<br>
+<strong>D)</strong> You can freely change the X-axis’s and Y-axis’s variables</p>
+<p><br></p>
+<ol start="30" type="1">
+<li><strong>Modify the graph code on the left as the graph on the right.</strong></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Graph in the left side</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>iris <span class="sc">%&gt;%</span> </span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Species, <span class="at">y=</span>Petal.Length)) <span class="sc">+</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span> </span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>()<span class="sc">+</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="31" type="1">
+<li><strong>Modify the graph code on the left as the graph on the right.</strong></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Graph in the left side</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>add_text <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Species=</span><span class="st">"setosa"</span>, </span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">Petal.Length=</span><span class="dv">6</span>,</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">lab=</span><span class="st">"Wonderful!"</span>)</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>iris <span class="sc">%&gt;%</span> </span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Species, <span class="at">y=</span>Petal.Length)) <span class="sc">+</span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="at">data=</span>add_text, <span class="fu">aes</span>(<span class="at">label=</span>lab))<span class="sc">+</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="32" type="1">
+<li><strong>Modify the graph code on the top as the graph on the bottom.</strong></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-19-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Graph on the top</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>gapminder <span class="sc">%&gt;%</span> </span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(country <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Korea, Rep."</span>, <span class="st">"Korea, Dem. Rep."</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>gdpPercap<span class="sc">/</span><span class="dv">1000</span>, <span class="at">y=</span>lifeExp, <span class="at">col=</span>country)) <span class="sc">+</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
