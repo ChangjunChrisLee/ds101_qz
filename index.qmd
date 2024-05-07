@@ -140,7 +140,7 @@ D)  `KMP_list_qz_a[6][[1]] <- seq(2,10,2)`
 
 <!-- -->
 
-A)  Access the fourth element of the first element of the sixth element
+A)  Access the fourth element of the second element of the sixth element
     of the list KMP_list_qz_a.
 B)  Assign the value 4 to the fourth element of the first element of the
     sixth element of the list KMP_list_qz_a.
