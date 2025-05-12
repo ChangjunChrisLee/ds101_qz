@@ -669,11 +669,11 @@ gapminder %>%
 
 <br>
 
-## Leanring Data Science with chatGPT
+## PART V. Learning Data Science with chatGPT
 
 <br>
 
-### Comparing the Emotional Language of Two Taylor Swift Songs
+### 33. Comparing the Emotional Language of Two Taylor Swift Songs, follow the instructions below, and submit your answer. 
 
 <br>
 
