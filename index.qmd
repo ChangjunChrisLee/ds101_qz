@@ -1,12 +1,12 @@
 ---
-title: "DS101 QZ 2024"
+title: "DS101 QZ 2025"
 format: html
 editor: visual
 ---
 
 ## Date and Location
 
--   Date: 8 May (Wed) 09:00 - 11:00
+-   Date: 13 May (Tue) 09:30 - 11:30
 
 -   Location: Class Room
 
@@ -16,19 +16,15 @@ editor: visual
 -   Please bring your laptop for the quiz.
 -   You are allowed to access any information through the Internet
 -   However, communication with others is strictly prohibited.
--   Do not use any messaging apps (e.g., KakaoTalk, TikTok, Line,
-    WeChat, etc.) during the quiz.
--   Upon completion of the quiz, you are required **to submit your
-    code**.
+-   Do not use any messaging apps (e.g., KakaoTalk, TikTok, Line, WeChat, etc.) during the quiz.
 
 ------------------------------------------------------------------------
 
 ## Submit your answers
 
-Solve the problem and submit your answer by entering it in the Google
-form at the link below.
+Solve the problem and submit your answer by entering it in the Google form at the link below.
 
-<https://forms.gle/aiEqgtjGqCuY5Emx6>
+<https://forms.gle/mnneHybsBPkbNP1y7>
 
 ------------------------------------------------------------------------
 
@@ -47,6 +43,8 @@ form at the link below.
 **PART III. Data Visualization**
 
 **PART IV. Advanced**
+
+**PART V. Learning Data Science with chatGPT**
 
 <br>
 
@@ -68,8 +66,7 @@ Locate "qz_a.RData" at your working directory and load the file
 load("data/qz_a.RData")
 ```
 
-Then you will see the object "KMP_list_qz_a" in the Environment window
-of RStudio.
+Then you will see the object "KMP_list_qz_a" in the Environment window of RStudio.
 
 OK, then let's begin the qz.
 
@@ -110,8 +107,7 @@ D)  list
 
 <br>
 
-4.  **Which of the following statements correctly creates the sixth
-    element of the list as an empty list?**
+4.  **Which of the following statements correctly creates the sixth element of the list as an empty list?**
 
 <!-- -->
 
@@ -122,9 +118,7 @@ D)  `KMP_list_qz_a[6] <- list(0)`
 
 <br>
 
-5.  **Which of the following correctly describes the creation of a
-    vector {2,4,6,8,10} using the seq function and placing it as the
-    first element of the sixth element of a list?**
+5.  **Which of the following correctly describes the creation of a vector {2,4,6,8,10} using the seq function and placing it as the first element of the sixth element of a list?**
 
 <!-- -->
 
@@ -135,19 +129,14 @@ D)  `KMP_list_qz_a[6][[1]] <- seq(2,10,2)`
 
 <br>
 
-6.  **Which of the following options correctly interprets the meaning of
-    the code `KMP_list_qz_a[[6]][[1]][4]`?**
+6.  **Which of the following options correctly interprets the meaning of the code `KMP_list_qz_a[[6]][[1]][4]`?**
 
 <!-- -->
 
-A)  Access the fourth element of the second element of the sixth element
-    of the list KMP_list_qz_a.
-B)  Assign the value 4 to the fourth element of the first element of the
-    sixth element of the list KMP_list_qz_a.
-C)  Retrieve the fourth element of the first sub-list within the sixth
-    element of the list KMP_list_qz_a.
-D)  Remove the fourth element from the first sub-list within the sixth
-    element of the list KMP_list_qz_a.
+A)  Access the fourth element of the second element of the sixth element of the list KMP_list_qz_a.
+B)  Assign the value 4 to the fourth element of the first element of the sixth element of the list KMP_list_qz_a.
+C)  Retrieve the fourth element of the first sub-list within the sixth element of the list KMP_list_qz_a.
+D)  Remove the fourth element from the first sub-list within the sixth element of the list KMP_list_qz_a.
 
 <br>
 
@@ -170,8 +159,7 @@ D)  5
 
 <br>
 
-8.  **What is the position of value 41 in X? (Note: it's not about the
-    value of X\[41\])**
+8.  **What is the position of value 41 in X? (Note: it's not about the value of X\[41\])**
 
 <!-- -->
 
@@ -182,9 +170,7 @@ D)  63
 
 <br>
 
-9.  **Which of the following expressions correctly represents the number
-    of elements in vector X where the values are not missing and are
-    less than 27?**
+9.  **Which of the following expressions correctly represents the number of elements in vector X where the values are not missing and are less than 27?**
 
 <!-- -->
 
@@ -206,8 +192,7 @@ M <- KMP_list_qz_a[[4]]
 
 <br>
 
-10. **Which of the following statements is true regarding the expression
-    `M[3,3]`, `t(M)[3,3]`, and `M[9]`?**
+10. **Which of the following statements is true regarding the expression `M[3,3]`, `t(M)[3,3]`, and `M[9]`?**
 
 <!-- -->
 
@@ -218,8 +203,7 @@ D)  M\[3,3\], t(M)\[3,3\], and M\[9\] are all equivalent.
 
 <br>
 
-11. **Which of the following correctly describes the output of the given
-    code snippets?**
+11. **Which of the following correctly describes the output of the given code snippets?**
 
 ```{r}
 # 1
@@ -228,16 +212,11 @@ apply(M, 2, mean)
 apply(M, 1, mean)
 ```
 
-A)  The first snippet calculates the average value of each column in
-    matrix M, while the second snippet calculates the average value of
-    each row.
-B)  The first snippet calculates the average value of each row in matrix
-    M, while the second snippet calculates the average value of each
-    column.
+A)  The first snippet calculates the average value of each column in matrix M, while the second snippet calculates the average value of each row.
+B)  The first snippet calculates the average value of each row in matrix M, while the second snippet calculates the average value of each column.
 C)  Both snippets calculate the average value of each element in matrix
     M.  
-D)  The snippets produce errors because the apply function does not
-    support averaging operations
+D)  The snippets produce errors because the apply function does not support averaging operations
 
 <br>
 
@@ -274,8 +253,7 @@ D)  70
 
 <br>
 
-14. **In DF1, how many people are in the category of 3000-4000K of the
-    income?**
+14. **In DF1, how many people are in the category of 3000-4000K of the income?**
 
 <!-- -->
 
@@ -286,8 +264,7 @@ D)  8
 
 <br>
 
-15. **In DF1, how many "Male" & "Never married" people, and how many SKT
-    (Telecom) users among them? (Use the variable: telecom)**
+15. **In DF1, how many "Male" & "Never married" people, and how many SKT (Telecom) users among them? (Use the variable: telecom)**
 
 <!-- -->
 
@@ -298,8 +275,7 @@ D)  3, 3
 
 <br>
 
-16. **How many people who used an LG smartphone in 2019 (in DF1)
-    switched to a Samsung smartphone in 2020 (in DF2)?**
+16. **How many people who used an LG smartphone in 2019 (in DF1) switched to a Samsung smartphone in 2020 (in DF2)?**
 
 <!-- -->
 
@@ -310,8 +286,7 @@ D)  9
 
 <br>
 
-17. **Of those who used an LG smartphone in 2019, how many people still
-    use LG in 2020?**
+17. **Of those who used an LG smartphone in 2019, how many people still use LG in 2020?**
 
 <!-- -->
 
@@ -322,10 +297,7 @@ D)  6
 
 <br>
 
-The code processes a text containing lyrics of "Let It Be" by The
-Beatles, removing newline characters and commas using the gsub function,
-then creates a word cloud visualization to display the frequency of
-words in the song.
+The code processes a text containing lyrics of "Let It Be" by The Beatles, removing newline characters and commas using the gsub function, then creates a word cloud visualization to display the frequency of words in the song.
 
 ```{r}
 letitbe <- c("When I find myself in times of trouble, Mother Mary comes to me
@@ -368,17 +340,14 @@ wordcloud2(df_word_count)
 
 <br>
 
-18. **What is the purpose of using the `gsub` function in the provided
-    code snippet?**
+18. **What is the purpose of using the `gsub` function in the provided code snippet?**
 
 <!-- -->
 
 A)  It converts the text into a word vector for further analysis.
-B)  It prepares the text data by removing unwanted characters like
-    newline characters and commas.
+B)  It prepares the text data by removing unwanted characters like newline characters and commas.
 C)  It calculates the frequency of each word in the text.
-D)  It generates a word cloud visualization based on the frequency of
-    words in the text.
+D)  It generates a word cloud visualization based on the frequency of words in the text.
 
 <br>
 
@@ -420,13 +389,11 @@ The code works like below:
 
 <br>
 
-The code below did the same procedure with above but for the year 2007.
-(a), (b), (c) are the same with the answers above.
+The code below did the same procedure with above but for the year 2007. (a), (b), (c) are the same with the answers above.
 
 ![](images/clipboard-1722588996.png)
 
-The code below finds the difference in gdpPercap from 1962 to 2007 and
-sorts them in descending order of growth (gdp_gap).
+The code below finds the difference in gdpPercap from 1962 to 2007 and sorts them in descending order of growth (gdp_gap).
 
 ![](images/clipboard-2005514971.png)
 
@@ -439,8 +406,7 @@ sorts them in descending order of growth (gdp_gap).
 
 <br>
 
-21. **In the result above, what is the rank of "Korea, Rep." in terms of
-    `gdp_gap`?**
+21. **In the result above, what is the rank of "Korea, Rep." in terms of `gdp_gap`?**
 
 **A)** 9\
 **B)** 11\
@@ -449,9 +415,7 @@ sorts them in descending order of growth (gdp_gap).
 
 <br>
 
-22. **Using the codes above, create a table for population growth from
-    1962 to 2007, and choose the country with the highest population
-    growth during the period.**
+22. **Using the codes above, create a table for population growth from 1962 to 2007, and choose the country with the highest population growth during the period.**
 
 **A)** China\
 **B)** India\
@@ -464,8 +428,7 @@ sorts them in descending order of growth (gdp_gap).
 
 <br>
 
-The following is the code to draw the graph below using the
-`gdp_gap_1962_2007` table created above.
+The following is the code to draw the graph below using the `gdp_gap_1962_2007` table created above.
 
 ![](images/clipboard-2865582315.png)
 
@@ -486,9 +449,7 @@ Let's use 'mtcars' dataset
 head(mtcars)
 ```
 
-24. **The value obtained by dividing horsepower (`hp`) by weight (`wt`)
-    is called marginal horsepower (`hp_by_wt`). Choose the car with the
-    largest `hp_by_wt` among the cars in the mtcars data.**
+24. **The value obtained by dividing horsepower (`hp`) by weight (`wt`) is called marginal horsepower (`hp_by_wt`). Choose the car with the largest `hp_by_wt` among the cars in the mtcars data.**
 
 **A)** Lotus Europa\
 **B)** Ford Pantera\
@@ -497,9 +458,7 @@ head(mtcars)
 
 <br>
 
-25. **Execute the code below to check the graph, and choose the
-    relationship between the car's weight (wt) and fuel efficiency
-    (mpg).**
+25. **Execute the code below to check the graph, and choose the relationship between the car's weight (wt) and fuel efficiency (mpg).**
 
 ```{r}
 mtcars %>% 
@@ -514,9 +473,7 @@ mtcars %>%
 
 <br>
 
-26. **Execute the code below to check the correlation between variables,
-    and choose a variable relationship that is not a positive
-    relationship.**
+26. **Execute the code below to check the correlation between variables, and choose a variable relationship that is not a positive relationship.**
 
 ```{r}
 mtcars %>% 
@@ -535,11 +492,9 @@ mtcars %>%
 
 <br>
 
-The code below expresses the correlation between variables in another
-way.
+The code below expresses the correlation between variables in another way.
 
-27. **Which of the following is not suitable as an advantage compared to
-    the previous graph?**
+27. **Which of the following is not suitable as an advantage compared to the previous graph?**
 
 ```{r}
 # install.packages("corrplot")
@@ -551,17 +506,14 @@ mtcars %>%
   corrplot(method="circle")
 ```
 
-**A)** Easy to find whether the relationship of two variables is
-positive or negative\
+**A)** Easy to find whether the relationship of two variables is positive or negative\
 **B)** It can be understood at a glance\
 **C)** More colorful\
 **D)** It can check each observation in the graph
 
 <br>
 
-The code below shows the distribution of petal length variables in iris
-data using geom_density. Run the code to check the graph and answer the
-questions.
+The code below shows the distribution of petal length variables in iris data using geom_density. Run the code to check the graph and answer the questions.
 
 ```{r}
 iris %>% 
@@ -574,8 +526,7 @@ iris %>%
   ylab("Density")
 ```
 
-28. **If by chance you found an iris and the petal length was 1.5 cm,
-    what is the species of this iris?**
+28. **If by chance you found an iris and the petal length was 1.5 cm, what is the species of this iris?**
 
 **A)** Setosa\
 **B)** Versicolor\
@@ -583,12 +534,9 @@ iris %>%
 
 <br>
 
-The graph below is an interactive graph with color classification for
-each species in the scatter plot for the relationship between Petal
-Length and Petal Width.
+The graph below is an interactive graph with color classification for each species in the scatter plot for the relationship between Petal Length and Petal Width.
 
-29. **Hover your mouse cursor over a dot on the graph and Choose the
-    answer which is not an advantage of this type of graph.**
+29. **Hover your mouse cursor over a dot on the graph and Choose the answer which is not an advantage of this type of graph.**
 
 ```{r, echo = T, results = 'hide', warning=F, message=F}
 # install.packages("plotly")
@@ -717,4 +665,152 @@ gapminder %>%
   filter(country %in% c("Korea, Rep.", "Korea, Dem. Rep.")) %>% 
   ggplot(aes(x=gdpPercap/1000, y=lifeExp, col=country)) +
   geom_point()
+```
+
+<br>
+
+## Leanring Data Science with chatGPT
+
+<br>
+
+### Comparing the Emotional Language of Two Taylor Swift Songs
+
+<br>
+
+You are provided with the results of a text mining analysis conducted using R. The analysis compares the lyrics of two Taylor Swift songs:
+
+-   Love Story (Taylor's Version)
+
+    -   [Lyrics](https://www.google.com/search?q=love+story+lyrics&oq=love+story+lyrics&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDY2NTBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8)
+
+-   Shake It Off (Taylor's Version)
+
+    -   [Lyrics](https://www.google.com/search?q=Shake+it+off&sca_esv=d884997e81249e58&sxsrf=AHTn8zqHrMr9bCJtXtxno-DKKjVHkCKIvQ%3A1747051570952&ei=MuQhaJXvOaPe2roPrKKskAo&ved=0ahUKEwiV0Kmi8p2NAxUjr1YBHSwRC6IQ4dUDCBA&uact=5&oq=Shake+it+off&gs_lp=Egxnd3Mtd2l6LXNlcnAiDFNoYWtlIGl0IG9mZjIKEAAYgAQYQxiKBTIKEC4YgAQYQxiKBTIIEAAYgAQYywEyCBAAGIAEGMsBMggQLhiABBjLATIIEAAYgAQYywEyBRAAGIAEMgoQABiABBgUGIcCMgoQABiABBhDGIoFMgUQLhiABEi9H1CWC1jzHnAEeAGQAQCYAbMBoAHtDaoBBDAuMTK4AQPIAQD4AQGYAhCgAusOwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAg4QABiwAxjkAhjWBNgBAcICFhAuGIAEGLADGEMY1AIYyAMYigXYAQHCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgIEECMYJ8ICChAjGIAEGCcYigXCAg0QLhiABBhDGNQCGIoFwgILEC4YgAQY0QMYxwHCAgcQLhiABBgKwgIHEAAYgAQYCsICFhAuGIAEGAoYlwUY3AQY3gQY3wTYAQGYAwCIBgGQBhO6BgYIARABGAmSBwQ0LjEyoAe80gGyBwQwLjEyuAe9Dg&sclient=gws-wiz-serp#wptab=si:APYL9btOMaxI48tKjOYdlPW3RyBplN8gAQzBdTKkB2IKbJ7kM9T8RmW6e56f40nA_2X21d9_gSQ3RZorULCFZihyiAsHcSpr_ERRhJ4_GHMINEpQO6lhrMcb3ptme13z1Conf-C5UNsp8EmU7VZLpZzzV5W0vPgp8XM7iJWLH5g14Jzup1ZswNI%3D)
+
+The analysis includes:
+
+-   The most frequently repeated words in each song
+
+-   Sentiment word counts using the `bing` lexicon (positive vs. negative)
+
+Additionally, you will listen to both songs to reflect on their actual emotional tones, and then critically evaluate the analytical approach.
+
+### **Your Submission Should Include:**
+
+-    A short written response (400–600 words) [(20 points)]{.underline}
+
+<Br>
+
+1.  **Listen to both songs**
+    -   Pay close attention to the lyrics, mood, emotional tone, and structure of each song.
+2.  **Review the analysis provided.**
+    -   Which song repeats certain keywords more frequently?
+
+    -   Which song contains more negative sentiment words?
+3.  **Critically evaluate the sentiment analysis:** Why might *Shake It Off*, a seemingly upbeat and empowering song, contain more "negative" words?
+4.  **Propose improvements or alternative methods** to better capture the emotional content of the lyrics.
+    -   Could ChatGPT or other AI models help?
+
+    -   Would contextual or sentence-level analysis yield better insight?
+
+### R Code for the Analysis
+
+```{r}
+
+# Check if the 'taylor' package is installed; if not, install it
+if (!requireNamespace("taylor", quietly = TRUE)) {
+  install.packages("taylor")  # Install the 'taylor' package from CRAN
+}
+
+# Load required libraries:
+# 'taylor' contains the dataset of Taylor Swift's lyrics and song metadata
+# 'tidytext' provides tools for unnesting and analyzing text data
+library(taylor)
+library(tidytext)
+
+# Preview the structure of the dataset to understand its variables
+taylor_album_songs %>% glimpse
+
+
+```
+
+```{r}
+# Define the two songs to compare
+# These are Taylor Swift's two well-known tracks, both in their re-recorded versions
+selected_songs <- c("Love Story (Taylor's Version)", 
+                    "Shake It Off (Taylor's Version)")
+
+# Process the lyrics of the selected songs
+lyrics_words <- taylor_album_songs %>%
+  # Filter the dataset to include only the selected songs
+  filter(track_name %in% selected_songs) %>%
+  
+  # Unnest the list-column 'lyrics' so that each row corresponds to a single line of lyrics
+  unnest(lyrics) %>%
+  
+  # Tokenize the lyrics line-by-line into individual words
+  # Here, 'lyric' is the column containing the actual text of each lyric line
+  unnest_tokens(word, lyric) %>%
+  
+  # Keep only alphabetic words (remove numbers, punctuation, etc.)
+  filter(str_detect(word, "[a-z]"))
+
+# View the resulting tidy text dataset
+# Each row represents a single word from the lyrics, along with the song it belongs to
+lyrics_words
+
+
+```
+
+```{r}
+lyrics_words %>%
+  # Count the frequency of each word for each song
+  count(track_name, word) %>%
+  # Group by song title so that we can identify the top 20 words per song
+  group_by(track_name) %>%
+  # Select the top 20 most frequent words for each song
+  slice_max(n, n = 20) %>%
+  # Begin plotting: x-axis = word (ordered by frequency), y-axis = count
+  ggplot(aes(x = reorder(word, n), y = n, fill = track_name)) +
+  geom_col(show.legend = FALSE) +
+  # Create separate plots for each song using facet_wrap
+  # 'scales = "free_y"' allows each subplot to use its own y-axis scale
+  facet_wrap(~ track_name, scales = "free_y") +
+  # Flip the axes so the words are on the y-axis for better readability
+  coord_flip() +
+  # Add title and axis labels
+  labs(title = "Most Frequently Used Words in Lyrics",
+       x = "Word",
+       y = "Frequency") +
+  # Use a minimal theme for clean visual appearance
+  theme_minimal()
+
+
+
+```
+
+```{r}
+# Load the 'bing' sentiment lexicon
+# This dictionary labels individual words as either "positive" or "negative"
+bing <- get_sentiments("bing")
+
+# Join the lyrics data with the sentiment lexicon
+lyrics_sentiment <- lyrics_words %>%
+  # Perform an inner join to keep only words that are found in the 'bing' sentiment lexicon
+  inner_join(bing, by = "word") %>%
+  # Count the number of positive and negative words per song
+  count(track_name, sentiment)
+
+# Visualize the number of sentiment words per song
+lyrics_sentiment %>%
+  ggplot(aes(x = sentiment, y = n, fill = track_name)) +
+  # Create side-by-side bar charts (dodge) to compare songs by sentiment type
+  geom_col(position = "dodge") +
+  # Add a title and axis labels to the plot
+  labs(title = "Comparison of Sentiment Word Counts by Song",
+       x = "Sentiment Type",
+       y = "Number of Words") +
+  theme_minimal()
+
+
 ```

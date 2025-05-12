@@ -1,0 +1,720 @@
+---
+title: "DS101 QZ 2024"
+format: html
+editor: visual
+---
+
+## Date and Location
+
+-   Date: 8 May (Wed) 09:00 - 11:00
+
+-   Location: Class Room
+
+## Notice
+
+-   Quiz will be administered through Google Forms.
+-   Please bring your laptop for the quiz.
+-   You are allowed to access any information through the Internet
+-   However, communication with others is strictly prohibited.
+-   Do not use any messaging apps (e.g., KakaoTalk, TikTok, Line,
+    WeChat, etc.) during the quiz.
+-   Upon completion of the quiz, you are required **to submit your
+    code**.
+
+------------------------------------------------------------------------
+
+## Submit your answers
+
+Solve the problem and submit your answer by entering it in the Google
+form at the link below.
+
+<https://forms.gle/aiEqgtjGqCuY5Emx6>
+
+------------------------------------------------------------------------
+
+## QZ content
+
+**PART I. Basic Syntax in R**
+
+1.  List
+2.  Vector
+3.  Matrix
+4.  Data.frame
+5.  Data wrangling
+
+**PART II. Data Wrangling with `tidyverse`**
+
+**PART III. Data Visualization**
+
+**PART IV. Advanced**
+
+<br>
+
+------------------------------------------------------------------------
+
+## QZ
+
+<br>
+
+### **PART I. Basic Syntax in R**
+
+Please download the data below
+
+[qz_a.RData](data/qz_a.RData)
+
+Locate "qz_a.RData" at your working directory and load the file
+
+```{r}
+load("data/qz_a.RData")
+```
+
+Then you will see the object "KMP_list_qz_a" in the Environment window
+of RStudio.
+
+OK, then let's begin the qz.
+
+<br>
+
+#### List
+
+1.  **How many elements are in the list?**
+
+<!-- -->
+
+A)  4
+B)  5
+C)  6
+D)  7
+
+<br>
+
+2.  **What is the name of the second element of the list?**
+
+<!-- -->
+
+A)  vector
+B)  matrix
+C)  p20
+D)  None
+
+<br>
+
+3.  **What is the data type of the first element in the list?**
+
+<!-- -->
+
+A)  vector
+B)  matrix
+C)  data.frame (tibble)
+D)  list
+
+<br>
+
+4.  **Which of the following statements correctly creates the sixth
+    element of the list as an empty list?**
+
+<!-- -->
+
+A)  `KMP_list_qz_a[[6]] <- list(0)`
+B)  `KMP_list_qz_a[6] <- list()`
+C)  `KMP_list_qz_a[[6]] <- empty_list(0)`
+D)  `KMP_list_qz_a[6] <- list(0)`
+
+<br>
+
+5.  **Which of the following correctly describes the creation of a
+    vector {2,4,6,8,10} using the seq function and placing it as the
+    first element of the sixth element of a list?**
+
+<!-- -->
+
+A)  `KMP_list_qz_a[[6]][[1]] <- seq(2,10,2`)
+B)  `KMP_list_qz_a[[6]][1] <- seq(2,10,2)`
+C)  `KMP_list_qz_a[[6]][1] <- c(2,4,6,8,10)`
+D)  `KMP_list_qz_a[6][[1]] <- seq(2,10,2)`
+
+<br>
+
+6.  **Which of the following options correctly interprets the meaning of
+    the code `KMP_list_qz_a[[6]][[1]][4]`?**
+
+<!-- -->
+
+A)  Access the fourth element of the second element of the sixth element
+    of the list KMP_list_qz_a.
+B)  Assign the value 4 to the fourth element of the first element of the
+    sixth element of the list KMP_list_qz_a.
+C)  Retrieve the fourth element of the first sub-list within the sixth
+    element of the list KMP_list_qz_a.
+D)  Remove the fourth element from the first sub-list within the sixth
+    element of the list KMP_list_qz_a.
+
+<br>
+
+#### Vector
+
+Let a vector *X* be like below
+
+```{r}
+X <- KMP_list_qz_a[[3]]
+```
+
+7.  **How many missing values are in vector X?**
+
+<!-- -->
+
+A)  2
+B)  3
+C)  4
+D)  5
+
+<br>
+
+8.  **What is the position of value 41 in X? (Note: it's not about the
+    value of X\[41\])**
+
+<!-- -->
+
+A)  33
+B)  43
+C)  53
+D)  63
+
+<br>
+
+9.  **Which of the following expressions correctly represents the number
+    of elements in vector X where the values are not missing and are
+    less than 27?**
+
+<!-- -->
+
+A)  `length(X[X < 27 & !is.na(X)])`
+B)  `length(X[X < 27 | !is.na(X)])`
+C)  `length(X[X >= 27 & !is.na(X)])`
+D)  `length(X[X >= 27 | !is.na(X)])`
+
+<br>
+
+#### Matrix
+
+Let a matrix *M* be like below
+
+```{r}
+M <- KMP_list_qz_a[[4]]
+
+```
+
+<br>
+
+10. **Which of the following statements is true regarding the expression
+    `M[3,3]`, `t(M)[3,3]`, and `M[9]`?**
+
+<!-- -->
+
+A)  M\[3,3\] is equivalent to t(M)\[3,3\] but different from M\[9\].
+B)  M\[3,3\] is equivalent to M\[9\] but different from t(M)\[3,3\].
+C)  M\[3,3\] is different from both t(M)\[3,3\] and M\[9\].
+D)  M\[3,3\], t(M)\[3,3\], and M\[9\] are all equivalent.
+
+<br>
+
+11. **Which of the following correctly describes the output of the given
+    code snippets?**
+
+```{r}
+# 1
+apply(M, 2, mean)
+# 2
+apply(M, 1, mean)
+```
+
+A)  The first snippet calculates the average value of each column in
+    matrix M, while the second snippet calculates the average value of
+    each row.
+B)  The first snippet calculates the average value of each row in matrix
+    M, while the second snippet calculates the average value of each
+    column.
+C)  Both snippets calculate the average value of each element in matrix
+    M.  
+D)  The snippets produce errors because the apply function does not
+    support averaging operations
+
+<br>
+
+#### Data.frame
+
+<br>
+
+Let DF1 and DF2 as like below
+
+```{r}
+DF1 <- KMP_list_qz_a[[1]]
+DF2 <- KMP_list_qz_a[[2]]
+```
+
+12. **How many variables in DF1?**
+
+<!-- -->
+
+A)  8
+B)  10
+C)  12
+D)  14
+
+<br>
+
+13. **How many people (observations) in DF2?**
+
+<!-- -->
+
+A)  40
+B)  50
+C)  60
+D)  70
+
+<br>
+
+14. **In DF1, how many people are in the category of 3000-4000K of the
+    income?**
+
+<!-- -->
+
+A)  5
+B)  6
+C)  7
+D)  8
+
+<br>
+
+15. **In DF1, how many "Male" & "Never married" people, and how many SKT
+    (Telecom) users among them? (Use the variable: telecom)**
+
+<!-- -->
+
+A)  5, 1
+B)  5, 3
+C)  3, 1
+D)  3, 3
+
+<br>
+
+16. **How many people who used an LG smartphone in 2019 (in DF1)
+    switched to a Samsung smartphone in 2020 (in DF2)?**
+
+<!-- -->
+
+A)  3
+B)  5
+C)  7
+D)  9
+
+<br>
+
+17. **Of those who used an LG smartphone in 2019, how many people still
+    use LG in 2020?**
+
+<!-- -->
+
+A)  None of them
+B)  2
+C)  4
+D)  6
+
+<br>
+
+The code processes a text containing lyrics of "Let It Be" by The
+Beatles, removing newline characters and commas using the gsub function,
+then creates a word cloud visualization to display the frequency of
+words in the song.
+
+```{r}
+letitbe <- c("When I find myself in times of trouble, Mother Mary comes to me
+  Speaking words of wisdom, let it be
+  And in my hour of darkness she is standing right in front of me
+  Speaking words of wisdom, let it be
+  Let it be, let it be, let it be, let it be
+  Whisper words of wisdom, let it be
+  And when the broken hearted people living in the world agree
+  There will be an answer, let it be
+  For though they may be parted, there is still a chance that they will see
+  There will be an answer, let it be
+  Let it be, let it be, let it be, let it be
+  There will be an answer, let it be
+  Let it be, let it be, let it be, let it be
+  Whisper words of wisdom, let it be
+  Let it be, let it be, let it be, let it be
+  Whisper words of wisdom, let it be, be
+  And when the night is cloudy there is still a light that shines on me
+  Shinin' until tomorrow, let it be
+  I wake up to the sound of music, Mother Mary comes to me
+  Speaking words of wisdom, let it be
+  And let it be, let it be, let it be, let it be
+  Whisper words of wisdom, let it be
+  And let it be, let it be, let it be, let it be
+  Whisper words of wisdom, let it be")
+
+letitbe_rm <- gsub("\n", "",letitbe)
+letitbe_rm <- gsub(",", "",letitbe_rm)
+
+word_list <- strsplit(letitbe_rm, split = " ")
+word_vec <- unlist(word_list)
+
+word_count <- sort(table(word_vec), decreasing = T)
+df_word_count <- data.frame(word_count)
+
+library(wordcloud2)
+wordcloud2(df_word_count)
+```
+
+<br>
+
+18. **What is the purpose of using the `gsub` function in the provided
+    code snippet?**
+
+<!-- -->
+
+A)  It converts the text into a word vector for further analysis.
+B)  It prepares the text data by removing unwanted characters like
+    newline characters and commas.
+C)  It calculates the frequency of each word in the text.
+D)  It generates a word cloud visualization based on the frequency of
+    words in the text.
+
+<br>
+
+### **PART II. Data Wrangling with `tidyverse`**
+
+<br>
+
+Download the gapminder package for using gapminder dataset.
+
+```{r}
+# install.packages("gapminder")
+```
+
+Import required libraries
+
+```{r}
+library(gapminder)
+library(tidyverse)
+```
+
+The code works like below:
+
+-   filters only 1962 data from gapminder data,
+
+-   selects only country and gdpPercap variables,
+
+-   renames gdpPercap variables to gdp_1962,
+
+-   and assigns it to object 'gap_1962'.
+
+![](images/clipboard-101652632.png)
+
+19. **Choose the one that fits the blank (a), (b), (c)**
+
+**A)** (a) filter (b) select (c) rename\
+**B)** (a) subset (b) keep (c) relabel\
+**C)** (a) arrange (b) pick (c) change_name\
+**D)** (a) extract (b) choose (c) modify
+
+<br>
+
+The code below did the same procedure with above but for the year 2007.
+(a), (b), (c) are the same with the answers above.
+
+![](images/clipboard-1722588996.png)
+
+The code below finds the difference in gdpPercap from 1962 to 2007 and
+sorts them in descending order of growth (gdp_gap).
+
+![](images/clipboard-2005514971.png)
+
+20. **Choose the one that fits the blank (a), (b), (c)**
+
+**A)** (a) inner_join (b) transform (c) setNames\
+**B)** (a) left_join (b) mutate (c) desc\
+**C)** (a) with (b) modify_if (c) -\
+**D)** (a) left_join (b) apply (c) recast
+
+<br>
+
+21. **In the result above, what is the rank of "Korea, Rep." in terms of
+    `gdp_gap`?**
+
+**A)** 9\
+**B)** 11\
+**C)** 13\
+**D)** 16
+
+<br>
+
+22. **Using the codes above, create a table for population growth from
+    1962 to 2007, and choose the country with the highest population
+    growth during the period.**
+
+**A)** China\
+**B)** India\
+**C)** Indonesia\
+**D)** Brazil
+
+<br>
+
+### **PART III. Data Visualization**
+
+<br>
+
+The following is the code to draw the graph below using the
+`gdp_gap_1962_2007` table created above.
+
+![](images/clipboard-2865582315.png)
+
+![](images/clipboard-2892810880.png)
+
+23. **Fill in the blanks.**
+
+**A)** (a) gdp_gap (b) country (c) identity\
+**B)** (a) country (b) year (c) "dodge"\
+**C)** (a) country (b) gdp_gap (c) "identity"\
+**D)** (a) gdp_gap (b) country (c) "identity"
+
+<br>
+
+Let's use 'mtcars' dataset
+
+```{r}
+head(mtcars)
+```
+
+24. **The value obtained by dividing horsepower (`hp`) by weight (`wt`)
+    is called marginal horsepower (`hp_by_wt`). Choose the car with the
+    largest `hp_by_wt` among the cars in the mtcars data.**
+
+**A)** Lotus Europa\
+**B)** Ford Pantera\
+**C)** Camaro Z28\
+**D)** Maserati Bora
+
+<br>
+
+25. **Execute the code below to check the graph, and choose the
+    relationship between the car's weight (wt) and fuel efficiency
+    (mpg).**
+
+```{r}
+mtcars %>% 
+  ggplot(aes(x=wt, y=mpg)) +
+  geom_point()
+```
+
+**A)** positive relationship\
+**B)** negative relationship\
+**C)** no correlation\
+**D)** We cannot tell with this graph
+
+<br>
+
+26. **Execute the code below to check the correlation between variables,
+    and choose a variable relationship that is not a positive
+    relationship.**
+
+```{r}
+mtcars %>% 
+  select(mpg, disp, hp, drat, wt) %>% 
+  plot
+```
+
+**A)** disp \~ hp\
+**B)** wt \~ hp\
+**C)** drat \~ mpg\
+**D)** mpg \~ disp
+
+<br>
+
+### **PART IV. Advanced**
+
+<br>
+
+The code below expresses the correlation between variables in another
+way.
+
+27. **Which of the following is not suitable as an advantage compared to
+    the previous graph?**
+
+```{r}
+# install.packages("corrplot")
+library(corrplot)
+
+mtcars %>% 
+  select(mpg, disp, hp, drat, wt) %>% 
+  cor %>% 
+  corrplot(method="circle")
+```
+
+**A)** Easy to find whether the relationship of two variables is
+positive or negative\
+**B)** It can be understood at a glance\
+**C)** More colorful\
+**D)** It can check each observation in the graph
+
+<br>
+
+The code below shows the distribution of petal length variables in iris
+data using geom_density. Run the code to check the graph and answer the
+questions.
+
+```{r}
+iris %>% 
+  ggplot(aes(x=Petal.Length, colour=Species, fill=Species)) +
+  geom_density(alpha=.3) +
+  geom_vline(aes(xintercept=mean(Petal.Length),  
+                 colour=Species),
+             linetype="dashed", color="grey", size=1)+
+  xlab("Petal Length (cm)") +  
+  ylab("Density")
+```
+
+28. **If by chance you found an iris and the petal length was 1.5 cm,
+    what is the species of this iris?**
+
+**A)** Setosa\
+**B)** Versicolor\
+**C)** Virginica
+
+<br>
+
+The graph below is an interactive graph with color classification for
+each species in the scatter plot for the relationship between Petal
+Length and Petal Width.
+
+29. **Hover your mouse cursor over a dot on the graph and Choose the
+    answer which is not an advantage of this type of graph.**
+
+```{r, echo = T, results = 'hide', warning=F, message=F}
+# install.packages("plotly")
+library(plotly)
+
+iris %>% 
+  plot_ly(
+    x = ~Petal.Length, 
+    y = ~Petal.Width,
+    color = ~Species,  
+    type = "scatter", 
+    mode = "markers") %>%  
+  layout(scene = list(xaxis = list(title = 'Petal length'),
+                      yaxis = list(title = 'Petal width')))   
+```
+
+**A)** Information on the specific observation can be easily obtained\
+**B)** You can zoom in by specifying the range\
+**C)** You can expand the scale with the mouse\
+**D)** You can freely change the X-axis's and Y-axis's variables
+
+<br>
+
+30. **Modify the graph code on the left as the graph on the right.**
+
+```{r, echo = FALSE}
+# install.packages('patchwork')
+library(patchwork)
+# Left
+g_left <- iris %>% 
+  ggplot(aes(x=Species, y=Petal.Length)) +
+  geom_boxplot() + 
+  geom_jitter()+
+  theme_bw() 
+
+# Right
+g_right <- iris %>% 
+  ggplot(aes(x=Species, y=Petal.Length)) +
+  geom_boxplot() + 
+  geom_jitter(alpha=0.5, col="blue")+
+  theme_bw()
+
+g_left + g_right
+
+```
+
+```{r, echo = T, results = 'hide', warning=F, message=F}
+# Graph in the left side
+iris %>% 
+  ggplot(aes(x=Species, y=Petal.Length)) +
+  geom_boxplot() + 
+  geom_jitter()+
+  theme_bw() 
+```
+
+<br>
+
+31. **Modify the graph code on the left as the graph on the right.**
+
+```{r, echo = FALSE}
+# Left
+add_text <- data.frame(Species="setosa", 
+                       Petal.Length=6,
+                       lab="Wonderful!")
+
+g_left <- iris %>% 
+  ggplot(aes(x=Species, y=Petal.Length)) +
+  geom_boxplot() +
+  geom_text(data=add_text, aes(label=lab))+
+  theme_bw() 
+
+# Right
+add_text <- data.frame(Species="virginica", 
+                       Petal.Length=2,
+                       lab="Wonderful!")
+
+g_right <- iris %>% 
+  ggplot(aes(x=Species, y=Petal.Length)) +
+  geom_boxplot() + 
+  geom_text(data=add_text, aes(label=lab))+
+  theme_bw() 
+
+g_left + g_right
+```
+
+```{r, echo = T, results = 'hide', warning=F, message=F}
+# Graph in the left side
+add_text <- data.frame(Species="setosa", 
+                       Petal.Length=6,
+                       lab="Wonderful!")
+
+iris %>% 
+  ggplot(aes(x=Species, y=Petal.Length)) +
+  geom_boxplot() +
+  geom_text(data=add_text, aes(label=lab))+
+  theme_bw() 
+```
+
+<br>
+
+32. **Modify the graph code on the top as the graph on the bottom.**
+
+```{r, echo = FALSE}
+# top
+g_left <- gapminder %>% 
+  filter(country %in% c("Korea, Rep.", "Korea, Dem. Rep.")) %>% 
+  ggplot(aes(x=gdpPercap/1000, y=lifeExp, col=country)) +
+  geom_point()
+
+# below
+g_right <- gapminder %>% 
+  filter(country %in% c("Korea, Rep.", "Korea, Dem. Rep.")) %>% 
+  ggplot(aes(x=gdpPercap/1000, y=lifeExp, col=country)) +
+  geom_point() +
+  facet_wrap(~year)
+
+g_left
+
+g_right
+
+```
+
+```{r, echo=T, results='hide', warning=FALSE, message=F}
+# Graph on the top
+gapminder %>% 
+  filter(country %in% c("Korea, Rep.", "Korea, Dem. Rep.")) %>% 
+  ggplot(aes(x=gdpPercap/1000, y=lifeExp, col=country)) +
+  geom_point()
+```
